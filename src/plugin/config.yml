@@ -1,0 +1,27 @@
+## Demo Plugin for Screencast
+---
+package:
+    author: Erik Pearson
+    name: demo_screencast
+    description: A package containing the sample panel and associated widget for demonstration purposes
+    date: August 9, 2015
+    version: 0.0.1
+source:
+    modules:
+        -
+            module: kb_panel_demo_screencast
+            file: panel        
+install:
+    routes:
+        -
+            path: ['screencast']
+            queryParams: 
+                param1: {}
+            panelObject: kb_panel_demo_screencast
+    menu:
+        -
+            name: screencast
+            definition:
+                path: screencast
+                label: Screecast Demo
+                icon: paw
