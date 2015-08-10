@@ -5,7 +5,7 @@ define([
     return Object.create(BaseWidget, {
         onAttach: {
             value: function (container) {
-                container.innerHTML = 'Hello, KBase';
+                container.innerHTML = 'Hello, KBase. I am a plugin';
             }
         }
     });
